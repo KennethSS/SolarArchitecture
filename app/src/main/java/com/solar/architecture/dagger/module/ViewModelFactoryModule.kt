@@ -2,7 +2,7 @@ package com.solar.architecture.dagger.module
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import com.solar.architecture.dagger.ViewModelFactory
+import com.solar.architecture.dagger.factory.ViewModelFactory
 import com.solar.architecture.mvvm.viewmodel.BasicViewModel
 import dagger.Binds
 import dagger.MapKey

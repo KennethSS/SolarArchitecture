@@ -28,5 +28,4 @@
         <activity android:name=".mvp.view.MvpActivity"/>
         <activity android:name=".db.room.RoomActivity"/>
     </application>
-
 </manifest>

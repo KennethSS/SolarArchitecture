@@ -1,4 +1,4 @@
-package com.solar.architecture.dagger
+package com.solar.architecture.dagger.factory
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider

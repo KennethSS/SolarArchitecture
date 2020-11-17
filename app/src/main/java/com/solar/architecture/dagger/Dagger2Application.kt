@@ -1,18 +1,18 @@
 package com.solar.architecture.dagger
 
-import android.app.Application
 import com.solar.architecture.dagger.component.AppComponent
 import com.solar.architecture.dagger.component.DaggerAppComponent
+import dagger.android.AndroidInjector
+import dagger.android.support.DaggerApplication
 
-class Dagger2Application : Application() {
+class Dagger2Application : DaggerApplication() {
 
-    override fun onCreate() {
-        super.onCreate()
-        appComponent = DaggerAppComponent.builder()
+    override fun applicationInjector(): AndroidInjector<out DaggerApplication> {
+        return DaggerAppComponent.builder()
             .application(this)
             .build()
-        appComponent.inject(this)
     }
+
 
     companion object {
         lateinit var appComponent: AppComponent

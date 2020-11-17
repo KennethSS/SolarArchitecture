@@ -9,11 +9,8 @@ import dagger.Provides
 
 @Module
 class DomainModule {
-    companion object {
-        @Provides
-        fun provideFoodRepository(foodRemote: FoodRemote): FoodRepository {
-            return FoodDataRepositoryImpl(foodRemote, FoodMapper())
-        }
+    @Provides
+    fun provideFoodRepository(foodRemote: FoodRemote): FoodRepository {
+        return FoodDataRepositoryImpl(foodRemote, FoodMapper())
     }
 }
-

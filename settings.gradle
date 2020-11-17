@@ -1,3 +1,6 @@
-include ':library'
+include ':hilt'
+include ':domain'
+include ':data'
+include ':remote'
 include ':app'
 rootProject.name = "SolarArchitecture"

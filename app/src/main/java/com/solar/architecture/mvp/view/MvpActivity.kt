@@ -12,7 +12,6 @@ import androidx.viewpager.widget.PagerAdapter
 import androidx.viewpager.widget.ViewPager
 import com.solar.architecture.R
 import com.solar.architecture.dagger.Dagger2Application
-import com.solar.architecture.dagger.component.DaggerActivityComponent
 import com.solar.architecture.databinding.ActivityMvpBinding
 import com.solar.architecture.mvp.contract.FoodContract
 import com.solar.domain.model.Food
@@ -23,11 +22,11 @@ import javax.inject.Inject
 class MvpActivity : AppCompatActivity(){
     override fun onCreate(savedInstanceState: Bundle?) {
 
-        val component = DaggerActivityComponent.builder()
+        /*val component = DaggerActivityComponent.builder()
             .appComponent(Dagger2Application.appComponent)
             .build()
 
-        component.inject(this)
+        component.inject(this)*/
         super.onCreate(savedInstanceState)
         bind = DataBindingUtil.setContentView(this, R.layout.activity_mvp)
 

@@ -41,6 +41,7 @@ object ApiClient {
             .readTimeout(READ_TIMEOUT, TimeUnit.SECONDS)
             .addInterceptor(AddCookiesInterceptor())
             .authenticator(TokenAuthenticator())
+
             //.addNetworkInterceptor(StethoInterceptor())
 
         if (isDebug) {
